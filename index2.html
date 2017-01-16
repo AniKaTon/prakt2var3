@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Регистрация </title>
+</head>
+
+<body>
+<form>
+<h2> Регистрация </h2>
+<input type="text" name="fam" pattern="[А-Яя-Ёё],[A-Za-z]{2,16}" placeholder="Фамилия" required="required"><br>
+<input type="text" name="name" pattern="[А-Яя-Ёё],[A-Za-z],[0-9]{2,13}" placeholder="Имя" required="required"><br>
+<input type="text" name="tname" pattern="[А-Яя-Ёё],[A-Za-z]{4,16}" placeholder="Отчество" required="required"><br>
+<input type="email" name="email" placeholder="E-mail" required="required"><br>
+<input type="password" name="password" pattern="[А-Яя-Ёё],[A-Za-z]{6,12}, [A-Z]{2,}, . {3}[0-9]{1} " placeholder="Пароль" required="required"><br>
+<input type="text" name="login" pattern="[А-Яя-Ёё],[A-Za-z],[0-9] {4,}" placeholder="Логин" required="required"><br>
+<select>
+<option>РКСИ</option>
+<option>МГУ</option>
+<option>MIT</option>
+<option>ЮФУ</option>
+<option>ДГТУ</option>
+</select><br>
+<label><input type="radio" name="kurs"> 1 курс</label><br>
+<label><input type="radio" name="kurs"> 2 курс</label><br>
+<label><input type="radio" name="kurs"> 3 курс</label><br>
+<label><input type="radio" name="kurs"> 4 курс</label><br>
+<label><input type="radio" name="kurs"> 5 курс</label><br>
+
+<input type="button" value="Отправить форму">
+</form>
+
+</body>
+</html>
